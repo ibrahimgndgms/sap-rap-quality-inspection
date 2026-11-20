@@ -20,15 +20,15 @@
 
 | List Report (Kritiklik & Filtreler) | Object Page (Detay & Kilitli Butonlar) |
 | :---: | :---: |
-| ![List Report](docs/01_list_report.png) | ![Object Page](docs/02_object_page_locked.png) |
+| ![List Report]([docs/01_list_report.png](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png) | ![Object Page]([docs/02_object_page_locked.png](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png)) |
 
-| Parametreli Reddetme Popup'ı | İş Kuralı Doğrulama (Validation) |
+| Parametreli Reddetme Popup'ı | İş Kuralı Doğrulama (Value Help) |
 | :---: | :---: |
-| ![Reject Popup](docs/03_reject_popup.png) | ![Validation](docs/04_validation_f4.png) |
+| ![Reject Popup]([docs/03_reject_popup.png](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/03_reject_popup.png) | ![Value Help]([docs/04_validation_f4.png](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/04_validation_f4.png)) |
 
-| ABAP Unit Test Sonucu | ATC Clean Core Raporu |
-| :---: | :---: |
-| ![ABAP Unit](docs/05_abap_unit.png) | ![ATC](docs/06_atc_clean_core.png) |
+ATC Clean Core Raporu |
+| :---: |
+| ![ATC](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/06_atc_clean_core.png) |
 
 ## Kurulum (abapGit)
 
