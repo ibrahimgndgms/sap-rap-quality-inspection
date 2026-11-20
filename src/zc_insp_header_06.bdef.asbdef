@@ -1,0 +1,38 @@
+projection;
+strict ( 2 );
+use draft;
+
+define behavior for ZC_INSP_HEADER_06 alias Inspection
+{
+  use create;
+  use update;
+  use delete;
+
+  use action ApproveBatch;
+  use action RejectBatch;
+
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+  use association _Items { create; with draft; }
+}
+
+define behavior for ZC_INSP_ITEMS_06 alias Items
+{
+  use update;
+  use delete;
+
+  use association _Header { with draft; }
+  use action checkSeverityComment;
+    side effects
+  {
+    determine action checkSeverityComment
+    executed on field Severity , field DefectComment
+    affects $self, messages;
+  }
+
+}

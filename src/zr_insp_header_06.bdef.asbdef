@@ -1,0 +1,94 @@
+managed implementation in class zbp_r_insp_header_06 unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZR_INSP_HEADER_06 alias Inspection
+persistent table zinsp_header_06
+draft table zinsp_header_d
+lock master total etag LastChangedAt
+authorization master ( global , instance )
+etag master LocalLastChangedAt
+
+{
+  create ( authorization : global );
+  update ( features : instance );
+  delete ( features : instance );
+
+  field ( numbering : managed, readonly ) InspectionId;
+  field ( readonly ) Status, TotalRiskScore, CreatedBy, CreatedAt, LastChangedBy, LastChangedAt;
+  association _Items { create; with draft; }
+
+
+  determination setDefaultValues on modify { create; }
+
+  validation validateInspectionDate on save { field InspectionDate; create; update; }
+
+  action ( features : instance , authorization : instance ) ApproveBatch result [1] $self;
+
+  action ( features : instance , authorization : instance ) RejectBatch parameter ZA_REJECT_REASON_06 result [1] $self;
+
+  draft  action ( features : instance ) Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare
+  {
+    validation validateInspectionDate;
+    validation Items~validateSeverityComment;
+  }
+
+  mapping for zinsp_header_06 corresponding
+    {
+      InspectionId       = inspection_id;
+      BatchId            = batch_id;
+      CreatedAt          = created_at;
+      CreatedBy          = created_by;
+      InspectionDate     = inspection_date;
+      LastChangedAt      = last_changed_at;
+      LastChangedBy      = last_changed_by;
+      LocalLastChangedAt = local_last_changed_at;
+      Plant              = plant;
+      Status             = status;
+      TotalRiskScore     = total_risk_score;
+      RejectReson        = reject_reson;
+    }
+}
+
+define behavior for ZR_INSP_ITEM_06 alias Items
+persistent table zinsp_items_06
+draft table zinsp_items_06_d
+lock dependent by _Header
+authorization dependent by _Header
+etag master LocalLastChangedAt
+{
+  update;
+  delete;
+  field ( numbering : managed, readonly ) ItemId;
+  field ( readonly ) InspectionId;
+
+  field ( features : instance ) DefectComment;
+
+  association _Header { with draft; }
+
+
+  determination calculateTotalRisk on modify { field Severity; create; delete; }
+
+  validation validateSeverityComment on save { field Severity, DefectComment; create; update; }
+
+  determine action checkSeverityComment
+  {
+    validation validateSeverityComment;
+  }
+
+
+
+  mapping for zinsp_items_06 corresponding
+    {
+      DefectComment      = defect_comment;
+      DefectType         = defect_type;
+      InspectionId       = inspection_id;
+      ItemId             = item_id;
+      LocalLastChangedAt = local_last_changed_at;
+      Severity           = severity;
+    }
+}

@@ -1,0 +1,55 @@
+@Metadata.layer: #CORE
+
+@UI: {
+  headerInfo: {
+    typeName: 'Defect Item',
+    typeNamePlural: 'Defect Items',
+    title: {
+      type: #STANDARD,
+      value: 'DefectType'
+    }
+  }
+}
+
+annotate view ZC_INSP_ITEMS_06
+    with 
+{
+    @UI.facet: [
+    {
+      id: 'ItemDetail',
+      purpose: #STANDARD,
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Defect Details',
+      position: 10
+    }
+  ]
+
+  @UI.hidden: true
+  ItemId;
+
+  @UI.hidden: true
+  InspectionId;
+
+  @UI: {
+    lineItem:       [ { position: 10, label: 'Defect Type' } ],
+    identification: [ { position: 10, label: 'Defect Type' } ]
+  }
+  DefectType;
+
+  @UI: {
+    lineItem:       [ { position: 20, label: 'Severity (1-5)' } ],
+    identification: [ { position: 20, label: 'Severity (1-5)' } ]
+  }
+ 
+  Severity;
+
+  @UI: {
+    lineItem:       [ { position: 30, label: 'Defect Comment' } ],
+    identification: [ { position: 30, label: 'Defect Comment' } ]
+  }
+  DefectComment;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+    
+}

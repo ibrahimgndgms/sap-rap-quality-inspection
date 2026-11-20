@@ -1,0 +1,108 @@
+@Metadata.layer: #CORE
+
+@UI: {
+  headerInfo: {
+    typeName: 'Inspection Order',
+    typeNamePlural: 'Inspection Orders',
+    title: {
+      type: #STANDARD,
+      value: 'BatchId'
+    }
+  }
+}
+
+annotate view ZC_INSP_HEADER_06 with
+
+{
+  @UI.facet: [
+  {
+        id: 'HeaderStatus',
+        purpose: #HEADER,
+        type: #DATAPOINT_REFERENCE,
+        targetQualifier: 'StatusDataPoint',
+        position: 10
+      },
+      {
+        id: 'GeneralInfo',
+        purpose: #STANDARD,
+        type: #IDENTIFICATION_REFERENCE,
+        label: 'General Information',
+        position: 20
+      },
+      {
+        id: 'DefectItems',
+        purpose: #STANDARD,
+        type: #LINEITEM_REFERENCE,
+        label: 'Defect Items',
+        position: 30,
+        targetElement: '_Items'
+      }
+    ]
+
+  @UI.hidden: true
+  InspectionId;
+
+  @UI: {
+    lineItem:       [ { position: 10, label: 'Parti No (Batch ID)'  }  ],
+    identification: [ { position: 10, label: 'Parti No (Batch ID)' } ],
+    selectionField: [ { position: 10 } ]
+  }
+  BatchId;
+
+  @UI: {
+    lineItem:       [ { position: 20, label: 'Plant' } ],
+    identification: [ { position: 20, label: 'Plant' } ],
+    selectionField: [ { position: 20 } ]
+  }
+  Plant;
+
+  @UI: {
+    lineItem:       [ { position: 30, label: 'Inspection Date' } ],
+    identification: [ { position: 30, label: 'Inspection Date' } ]
+  }
+  InspectionDate;
+
+  @UI: {
+    lineItem: [{ position: 40 , label : 'Reject Reson' }],
+    identification: [{ position: 40 , label : 'Reject Reson' }]
+  }
+  RejectReson;
+
+  @UI: {
+    lineItem: [
+      { position: 50, label: 'Status', criticality: 'StatusCriticality' },
+      { type: #FOR_ACTION, dataAction: 'ApproveBatch', label: 'Onayla' },
+      { type: #FOR_ACTION, dataAction: 'RejectBatch',  label: 'Reddet' }
+    ],
+    identification: [
+      { position: 50, label: 'Status' , criticality: 'StatusCriticality'},
+      { type: #FOR_ACTION, dataAction: 'ApproveBatch', label: 'Onayla' },
+      { type: #FOR_ACTION, dataAction: 'RejectBatch',  label: 'Reddet' }
+    ],
+    selectionField: [ { position: 30 } ]
+  }
+  @UI.dataPoint: { qualifier: 'StatusDataPoint', title: 'Denetim Durumu', criticality: 'StatusCriticality' }
+  Status;
+
+  @UI: {
+    lineItem:       [ { position: 60, label: 'Total Risk Score' } ],
+    identification: [ { position: 60, label: 'Total Risk Score' } ]
+  }
+  TotalRiskScore;
+
+  @UI.hidden: true
+  CreatedBy;
+
+  @UI.hidden: true
+  CreatedAt;
+
+  @UI.hidden: true
+  LastChangedBy;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+
+}

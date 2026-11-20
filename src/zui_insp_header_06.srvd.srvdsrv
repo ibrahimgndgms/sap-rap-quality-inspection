@@ -1,0 +1,5 @@
+@EndUserText.label: 'Defect Service Definition'
+define service ZUI_INSP_HEADER_06 {
+  expose ZC_INSP_HEADER_06;
+  expose ZC_INSP_ITEMS_06;
+}
