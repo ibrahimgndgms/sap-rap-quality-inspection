@@ -20,7 +20,8 @@
 
 | List Report | Object Page (Detay & Kilitli Butonlar) |
 | :---: | :---: |
-| ![List Report](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png) | ![Object Page](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png)) |
+| ![List Report](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png) | 
+![Object Page](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png)) |
 
 | Parametreli Reddetme Popup'ı | İş Kuralı Doğrulama (Value Help) |
 | :---: | :---: |
