@@ -1,4 +1,4 @@
-# 🏭 Quality Inspection Management System (SAP BTP ABAP Cloud & RAP)
+# Quality Inspection Management System (SAP BTP ABAP Cloud & RAP)
 
 ![SAP BTP](https://img.shields.io/badge/SAP_BTP-ABAP_Cloud-008FD3?style=for-the-badge&logo=sap)
 ![RAP](https://img.shields.io/badge/Architecture-Managed_RAP-2B6CB0?style=for-the-badge)
