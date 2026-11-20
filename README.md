@@ -18,7 +18,7 @@
 
 ## Ekran Görüntüleri
 
-| List Report (Kritiklik & Filtreler) | Object Page (Detay & Kilitli Butonlar) |
+| List Report | Object Page (Detay & Kilitli Butonlar) |
 | :---: | :---: |
 | ![List Report](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png) | ![Object Page](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png)) |
 
@@ -30,12 +30,5 @@ ATC Clean Core Raporu |
 | :---: |
 | ![ATC](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/06_atc_clean_core.png) |
 
-## Kurulum (abapGit)
-
-1. Eclipse ADT üzerinden SAP BTP ABAP ortamına bağlanıp boş bir paket oluşturun (örn. `ZRAP_QUALITY_06`).
-2. **abapGit Repositories** görünümünden bu repoyu (`refs/heads/main`) pakete bağlayıp **Pull** ile nesneleri aktifleştirin.
-3. **`ZUI_INSP_O4_06`** Service Binding dosyasını açıp **Publish** butonuna basın ve **Preview** ile uygulamayı başlatın.
-
-## Geliştirici
 
 **İbrahim Gündoğmuş** — Computer Engineering | SAP ABAP & BTP Cloud Developer
