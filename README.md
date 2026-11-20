@@ -19,15 +19,19 @@
 ## Ekran Görüntüleri
 
 | List Report |
-| :---: | :---: |
+| :---: |
 | ![List Report](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png) | 
+
 | Object Page (Detay & Kilitli Butonlar) |
+| :---: |
 ![Object Page](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png)) |
 
 | Parametreli Reddetme Popup'ı |
-| :---: | :---: |
+| :---: |
 | ![Reject Popup](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/03_reject_popup.png) | 
+
 | İş Kuralı Doğrulama (Value Help) |
+| :---: |
 ![Value Help](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/04_validation_f4.png)) |
 
 ATC Clean Core Raporu |
