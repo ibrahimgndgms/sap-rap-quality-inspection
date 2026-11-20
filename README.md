@@ -41,7 +41,7 @@ An end-to-end **Quality Inspection & Defect Management** application built on **
 
 ---
 
-## 📸 Application Preview / Ekran Görüntüleri
+## Application Preview / Ekran Görüntüleri
 
 ### 1. List Report (Criticality & Filters)
 ![List Report](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png?raw=true)
