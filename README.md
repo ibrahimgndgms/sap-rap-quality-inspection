@@ -41,19 +41,30 @@ An end-to-end **Quality Inspection & Defect Management** application built on **
 
 ---
 
-## Application Preview / Ekran Görüntüleri
+## 📸 Application Preview / Ekran Görüntüleri
 
-| List Report (Criticality & Filters) | Object Page (Detail & Locked Features) |
-| :---: | :---: |
-| ![List Report](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png?raw=true) | ![Object Page](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png?raw=true) |
+### 1. List Report (Criticality & Filters)
+![List Report](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png?raw=true)
 
-| Parameterized Reject Action (Popup) | Business Rule Validation & Value Help |
-| :---: | :---: |
-| ![Reject Popup](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/03_reject_popup.png?raw=true) | ![Value Help](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/04_validation_f4.png?raw=true) |
+---
 
-| ATC Clean Core Report (`0 Errors`) |
-| :---: |
-| ![ATC](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/06_atc_clean_core.png?raw=true) |
+### 2. Object Page (Detail & Locked Features)
+![Object Page](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png?raw=true)
+
+---
+
+### 3. Parameterized Reject Action (Popup)
+![Reject Popup](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/03_reject_popup.png?raw=true)
+
+---
+
+### 4. Business Rule Validation & Value Help
+![Value Help](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/04_validation_f4.png?raw=true)
+
+---
+
+### 5. ATC Clean Core Report (`0 Errors`)
+![ATC](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/06_atc_clean_core.png?raw=true)
 
 ---
 
