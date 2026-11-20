@@ -20,11 +20,11 @@
 
 | List Report (Kritiklik & Filtreler) | Object Page (Detay & Kilitli Butonlar) |
 | :---: | :---: |
-| ![List Report]([docs/01_list_report.png](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png) | ![Object Page]([docs/02_object_page_locked.png](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png)) |
+| ![List Report](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/01_list_report.png) | ![Object Page](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/02_object_page_locked.png)) |
 
 | Parametreli Reddetme Popup'ı | İş Kuralı Doğrulama (Value Help) |
 | :---: | :---: |
-| ![Reject Popup]([docs/03_reject_popup.png](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/03_reject_popup.png) | ![Value Help]([docs/04_validation_f4.png](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/04_validation_f4.png)) |
+| ![Reject Popup](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/03_reject_popup.png) | ![Value Help](https://github.com/ibrahimgndgms/sap-rap-quality-inspection/blob/main/04_validation_f4.png)) |
 
 ATC Clean Core Raporu |
 | :---: |
