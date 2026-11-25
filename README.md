@@ -7,7 +7,7 @@
 
 ---
 
-## EN English Overview
+## English Overview
 
 An end-to-end **Quality Inspection & Defect Management** application built on **SAP BTP ABAP Environment (ABAP Cloud)** using the **ABAP RESTful Application Programming Model (Managed RAP)** and **SAP Fiori Elements (OData V4)**.
 
@@ -24,7 +24,7 @@ An end-to-end **Quality Inspection & Defect Management** application built on **
 
 ---
 
-## 🇹🇷 Türkçe Açıklama
+## Türkçe Açıklama
 
 **SAP BTP ABAP Environment (ABAP Cloud)** üzerinde **Managed RAP** mimarisi ve **SAP Fiori Elements (OData V4)** kullanılarak uçtan uca geliştirilmiş **Kalite Kontrol ve Kusur Yönetimi** uygulaması.
 
